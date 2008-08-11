@@ -1,0 +1,557 @@
+/*
+ AjaxScaffoldGenerator version 3.1.0
+ (c) 2006 Richard White <rrwhite@gmail.com>
+
+ AjaxScaffoldGenerator is freely distributable under the terms of an MIT-style license.
+
+ For details, see the AjaxScaffoldGenerator web site: http://www.ajaxscaffold.com/
+*/
+
+.ajax-scaffold form,
+.ajax-scaffold p,
+.ajax-scaffold div,
+.ajax-scaffold fieldset {
+margin: 0;
+}
+
+.ajax-scaffold table{
+  margin-top: 20px;  
+}
+
+.ajax-scaffold {
+    margin: 0 0 5px 15px;
+    overflow:auto;
+    width:100%;
+}
+
+@media print {
+  .ajax-scaffold {
+    overflow:visible;
+  }
+}
+
+.ajax-scaffold table {
+width: 100%;
+}
+
+.ajax-scaffold a.heading {
+text-decoration: none;
+}
+
+.ajax-scaffold a.heading:hover {
+/* background: #ff8; */
+text-decoration: underline;
+}
+
+/* Header Styling
+   ======================== */
+
+.ajax-scaffold-header {
+background: #fff;
+position: relative;
+}
+
+.ajax-scaffold-header h2 {
+color: #fff;
+padding: 2px 5px 4px 5px;
+margin: 0;
+font: normal 17px verdana, sans-serif;
+display: inline;
+}
+
+.ajax-scaffold-header a {
+color: #fff;
+text-decoration: none;
+letter-spacing: 0;
+}
+
+.ajax-scaffold-header a:hover {
+ text-decoration: underline;
+}
+
+.ajax-scaffold-header .describe-search {
+color: #fff;
+text-decoration: none;
+letter-spacing: 0;
+font: bold 1.2em arial, sans-serif;
+margin-right: 10px;
+vertical-align: bottom;
+}
+
+
+/* Search widgets styling
+   ======================== */
+
+.ajax-scaffold-search {
+cursor: default;
+}
+
+.ajax-scaffold-search a {
+  text-decoration: underline;
+  color: #0d52a0;
+}
+
+.ajax-scaffold-search-td {
+background-color: #fff;
+border-width: 0 0 0 0 !important;
+}
+
+.ajax-scaffold-search td {
+  padding:3px 2px;
+}
+
+.ajax-scaffold-search-tr {
+border-width: 0 0 0 0 !important;
+}
+
+.ajax-scaffold-transaction-search {
+  margin-left:2em;
+  /*width: 30em;*/
+}
+
+.ajax-scaffold-transaction-search .search-controls{
+  padding-top: .5em;
+}
+
+.ajax-scaffold-transaction-search .search-controls a {
+  text-decoration: none;
+  color: #0d52a0;
+  vertical-align: bottom;
+}
+
+.ajax-scaffold-transaction-search .search-controls a:hover {
+  text-decoration: underline;
+  color: #0d52a0;
+}
+
+.ajax-scaffold-transaction-search .fieldrow {
+  cursor: default;
+  clear: both;
+}
+
+.ajax-scaffold-transaction-search td.labelcell {
+  text-align:right;
+}
+
+.ajax-scaffold-transaction-search td.inputcell {
+  text-align:left;
+}
+
+.ajax-scaffold-transaction-search .fieldrow,
+.ajax-scaffold-transaction-search .fieldrow tr,
+.ajax-scaffold-transaction-search .fieldrow td {
+  /* color: #0d52a0; */
+  text-decoration: none;
+  letter-spacing: 0;
+  font: bold 12px arial, sans-serif;
+  background-color: #fff;
+  border: 0;
+  white-space: nowrap;
+}
+.ajax-scaffold-transaction-search td .label {
+  margin-right: 2ex;
+}
+.ajax-scaffold-transaction-search input, 
+.ajax-scaffold-transaction-search #status,
+.ajax-scaffold-transaction-search #merchant_select,
+.ajax-scaffold-transaction-search #transaction_code,
+.ajax-scaffold-transaction-search #gateway,
+.ajax-scaffold-transaction-search #start_date,
+.ajax-scaffold-transaction-search #end_date,
+.ajax-scaffold-transaction-search #date_range,
+.ajax-scaffold-transaction-search #creditcard_id,
+.ajax-scaffold-transaction-search #advanced-search,
+.ajax-scaffold-transaction-search #default_per_page {
+  margin: 0;
+}
+.ajax-scaffold-transaction-search img#start_date_calendar,
+.ajax-scaffold-transaction-search img#end_date_calendar {
+  position: relative;
+  top: 2px;
+}
+.ajax-scaffold-transaction-search img#start_date_calendar,
+.ajax-scaffold-transaction-search input#amount_from {
+}
+
+.ajax-scaffold-transaction-search .fieldrow .inputString,
+.ajax-scaffold-transaction-search .fieldrow .roinputString {
+  text-decoration: none;
+  letter-spacing: 0;
+  font:12px arial, sans-serif;
+}
+
+#ajax-scaffold-search input,
+#ajax-scaffold-search select,
+.ajax-scaffold-transaction-search .fieldrow .inputString input,
+.ajax-scaffold-transaction-search .fieldrow .inputString select,
+.ajax-scaffold-transaction-search .fieldrow .roinputString input,
+.ajax-scaffold-transaction-search .fieldrow .roinputString select {
+  text-decoration: none;
+  letter-spacing: 0;
+}
+
+
+.ajax-scaffold-transaction-search .fieldrow .roinputString input,
+.ajax-scaffold-transaction-search .fieldrow .roinputString select,
+.ajax-scaffold-transaction-search .fieldrow .roinputString input:focus,
+.ajax-scaffold-transaction-search .fieldrow .roinputString select:focus {
+  border: none;
+  text-align: right;
+}
+span.inputString {
+  white-space: nowrap;
+}
+/* Header Styling : Nested
+   ======================== */
+
+/*.ajax-scaffold .ajax-scaffold {
+margin: 2px 5px;
+}
+*/
+
+.ajax-scaffold .ajax-scaffold .ajax-scaffold-header h2 {
+font-size: 13px;
+font-weight: bold;
+}
+
+.ajax-scaffold .ajax-scaffold .ajax-scaffold-header div.actions a {
+font: bold 11px verdana, sans-serif;
+}
+
+.ajax-scaffold .ajax-scaffold .ajax-scaffold-header div.actions {
+top: 4px;
+}
+
+/* Table Column Headers
+   ============================= */
+
+.ajax-scaffold th {
+background: #555;
+text-align: left;
+}
+
+.ajax-scaffold th a,
+.ajax-scaffold th p {
+font: bold 11px arial, sans-serif;
+display: block;
+}
+
+.ajax-scaffold th a {
+color: #fff;
+padding: 2px 5px 2px 5px;
+}
+
+.ajax-scaffold th p {
+color: #eee;
+padding: 2px 5px;
+}
+
+
+/* Table Body Styling
+   ============================= */
+
+.ajax-scaffold td {
+padding: 3px 2px;
+/* color: #333; */
+font-family: Verdana, sans-serif;
+font-size: 11px;
+/* background-color: white; */
+border-bottom: solid 1px #C5DBF7;
+border-left: solid 1px #C5DBF7;
+white-space: nowrap;
+}
+
+
+.ajax-scaffold td.actions {
+border-right: solid 1px #ccc;
+}
+
+
+.ajax-scaffold td.empty {
+color: #999;
+text-align: center;
+}
+
+/* Table Actions (Edit, Delete) Styling
+   ============================= */
+
+.ajax-scaffold td.actions {
+padding: 0;
+width: 1%;
+}
+
+.ajax-scaffold td.actions table {
+float: right;
+width: auto;
+margin-right: 5px;
+}
+
+.ajax-scaffold td.actions table td {
+border: none;
+text-align: right;
+padding: 0 2px;
+}
+
+.ajax-scaffold td.actions a {
+font: bold 11px verdana, sans-serif;
+letter-spacing: -1px;
+padding: 2px;
+line-height: 16px;
+}
+
+/* Download Actions (CSV, ...) Styling
+   ============================= */
+
+.ajax-scaffold-download-tx {
+    line-height: 1.8em;
+}
+/* ajax-scaffold Footer Styling
+   ========================== */
+
+.ajax-scaffold .ajax-scaffold-footer {
+text-align: right;
+padding: 3px 5px 2px 5px;
+border-bottom: none;
+height:14px;
+}
+
+.ajax-scaffold .ajax-scaffold-footer .left {
+width: 25%;
+float: left;
+text-align:left;
+}
+
+.ajax-scaffold .ajax-scaffold-footer .middle {
+width:50%;
+float: left;
+text-align:center;
+}
+
+.ajax-scaffold .ajax-scaffold-footer .right {
+width:25%;
+float: left;
+text-align:right;
+}
+
+.ajax-scaffold-footer a {
+text-decoration: none;
+letter-spacing: 0;
+padding: 0 2px;
+margin: 0 -2px;
+}
+
+
+.ajax-scaffold-footer .next {
+margin-left: 0;
+padding-left: 5px;
+}
+
+.ajax-scaffold-footer .previous {
+margin-right: 0;
+padding-right: 5px;
+}
+
+
+
+/* Messages
+   ========================= */
+
+.ajax-scaffold .messages-container,
+.ajax-scaffold .ajax-scaffold .messages-container{
+padding: 0;
+margin: 0 7px;
+}
+
+.ajax-scaffold .empty-message {
+padding: 4px;
+text-align: center;
+}
+
+.ajax-scaffold .message {
+padding: 5px 20px 5px 21px;
+position: relative;
+margin: 2px 7px;
+line-height: 12px;
+}
+
+.ajax-scaffold td .message a {
+position: absolute;
+right: 10px;
+top: 4px;
+padding: 0;
+letter-spacing: -1px;
+}
+
+.ajax-scaffold .messages-container .message {
+margin: 0;
+}
+
+* html .ajax-scaffold .messages-container .message {
+background-position: 7px 3px;
+}
+
+/* Error Styling
+   ========================== */
+
+.ajax-scaffold #errorExplanation {
+margin: 2px 7px;
+float: left;
+}
+
+.ajax-scaffold fieldset {
+
+}
+
+.ajax-scaffold #errorExplanation h2 {
+padding: 2px 5px 3px 20px;
+font-size: 11px;
+margin: 0;
+letter-spacing: 0;
+}
+
+.ajax-scaffold #errorExplanation ul {
+margin: 0;
+padding: 0 2px 4px 25px;
+list-style: disc;
+}
+
+.ajax-scaffold #errorExplanation p {
+padding: 2px 5px;
+margin: 0;
+}
+
+.ajax-scaffold #errorExplanation ul li {
+letter-spacing: -1px;
+margin: 0;
+padding: 0;
+}
+
+/* Loading Indicators
+   ============================== */
+
+.ajax-scaffold .loading-indicator {
+vertical-align: middle;
+margin: 0;
+}
+
+.ajax-scaffold .ajax-scaffold-header .loading-indicator,
+.ajax-scaffold .update .loading-indicator,
+.ajax-scaffold .create .loading-indicator {
+vertical-align: bottom;
+margin-bottom: 3px;
+}
+
+/* Form Styling
+   ============================== */
+
+.ajax-scaffold td.update,
+.ajax-scaffold td.create {
+padding: 4px;
+cursor: default;
+}
+
+.ajax-scaffold .submit {
+letter-spacing: 0;
+margin: 0;
+margin-top: 5px;
+}
+
+.ajax-scaffold fieldset {
+border: none;
+}
+
+.ajax-scaffold fieldset.checkboxgroup {
+border: 2px;
+}
+
+.ajax-scaffold .row .field-label{
+text-align: right;
+float: left !important;
+width: 12em;
+padding-right: 2em;
+}
+
+.ajax-scaffold .row .field-content{
+width: 13em;
+}
+
+.ajax-scaffold h4 {
+padding: 2px;
+margin: 0;
+text-transform: none;
+letter-spacing: -1px;
+}
+
+
+.ajax-scaffold p.form-footer .left-action {
+letter-spacing: 0;
+float: left;
+margin-right: 20em;
+}
+
+.ajax-scaffold p.form-footer .center-action {
+letter-spacing: 0;
+float: right;
+text-align: left;
+width: 50%;
+}
+
+.ajax-scaffold p {
+clear: both;
+}
+
+.ajax-scaffold div.details-form-column-div-left {
+width: 45%;
+float: left;
+margin-left: 0.4em;
+}
+
+.ajax-scaffold div.details-form-column-div-right {
+width: 45%;
+float: left;
+margin-left: 0.4em;
+}
+
+
+.ajax-scaffold div.row {
+clear: both;
+float: none;
+padding: 2px;
+margin-left: 5px;
+}
+
+.ajax-scaffold div.form-element {
+float: left;
+margin-right: 10px;
+margin-bottom: 2px;
+}
+
+
+.ajax-scaffold .form-element input {
+padding: 1px;
+}
+
+.ajax-scaffold textarea {
+height: 65px;
+padding: 1px;
+}
+
+/* IE hacks
+   ==================================== */
+
+* html .ajax-scaffold-header {
+height: 1%;
+}
+
+
+
+
+/* Put a div around the scaffold table so it will be horiz. scrollable when 
+ contents overflow */ 
+div.scaffold_scroller {
+  float: left;
+  width: 100%;
+  overflow: auto;
+  padding: 0;
+  margin: 0;
+}

@@ -13,6 +13,16 @@ Spec::Runner.configure do |config|
   config.use_instantiated_fixtures  = false
   config.fixture_path = RAILS_ROOT + '/spec/fixtures/'
 
+  def all_fixtures
+    set_fixture_class :debts          =>   Debt
+
+    a=[]
+    Dir.foreach("./spec/fixtures/") do |file|
+      a << file.gsub(".yml","").to_sym if file =~ /.*.yml$/
+    end
+    #    fixtures :special_foos, set_fixture_class(:special_foos => Foo)
+    fixtures a
+  end
   # == Fixtures
   #
   # You can declare fixtures for each example_group like this:
@@ -42,6 +52,6 @@ Spec::Runner.configure do |config|
   # config.mock_with :rr
   #
   # == Notes
-  # 
+  #
   # For more information take a look at Spec::Example::Configuration and Spec::Runner
 end

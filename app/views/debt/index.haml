@@ -1,1 +1,21 @@
-hello
+#contact.ajax-scaffold
+  %table
+    %tr
+      %th description
+      %th money
+      %th occurs_on
+      %th category
+      %th user
+  - for debt in @debts
+    %tr
+      %td
+        = debt.description
+      %td
+        = debt.money
+      %td
+        = debt.occurs_on
+      %td
+        = debt.category
+      %td
+        = debt.user
+  = will_paginate @debts
