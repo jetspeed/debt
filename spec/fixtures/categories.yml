@@ -1,10 +1,8 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
-wangxq:
-  name: wangxq
-  income: 3000
-guoy:
-  name: guoy
-  income: 2500
+category01:
+  name: meat
+category02:
+  name: ÀÕ¿Ò
 # one:
 #   column: value
 #

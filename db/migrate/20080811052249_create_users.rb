@@ -1,8 +1,8 @@
 class CreateUsers < ActiveRecord::Migration
   def self.up
     create_table :users do |t|
-      t.name :string
-      t.income :float
+      t.string :name
+      t.float :income
       t.timestamps
     end
   end
