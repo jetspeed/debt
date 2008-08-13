@@ -17,3 +17,6 @@ production:
   adapter: sqlite3
   database: db/pro.sqlite3
   timeout: 5000
+
+:fixtures_load_order:
+  debts
