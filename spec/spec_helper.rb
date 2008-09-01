@@ -15,6 +15,8 @@ Spec::Runner.configure do |config|
 
   def all_fixtures
     set_fixture_class :debts          =>   Debt
+    set_fixture_class :categories     =>   Category
+    set_fixture_class :users          =>   User
 
     a=[]
     Dir.foreach("./spec/fixtures/") do |file|

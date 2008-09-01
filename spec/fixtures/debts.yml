@@ -10,8 +10,8 @@ debt01:
   money:    12.67
   category_id: 1
   user_id: 1
-debt01:
-  description: "buy meat"
-  money:    12.67
+debt02:
+  description: "transport card"
+  money:    100
   category_id: 1
   user_id: 1

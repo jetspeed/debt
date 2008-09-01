@@ -19,6 +19,5 @@ production:
   timeout: 5000
 
 :fixtures_load_order:
-  users
-  categories
   debts
+
