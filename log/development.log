@@ -4293,3 +4293,478 @@ ActionController::RoutingError (No route matches "/javascripts/ajax_scaffold.js"
     script/server:3
 
 Rendering /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing DebtController#index (for 127.0.0.1 at 2008-09-02 13:49:17) [GET]
+  Session ID: e8662733cafaf66224544bfbd7ad0044
+  Parameters: {"action"=>"index", "controller"=>"debt"}
+  [4;36;1mDebt Load (0.001280)[0m   [0;1mSELECT * FROM "debts" ORDER BY money LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering debt/index
+  [4;35;1mCategory Load (0.000144)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;36;1mUser Load (0.000131)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 0.03327 (30 reqs/sec) | Rendering: 0.02266 (68%) | DB: 0.00155 (4%) | 200 OK [http://localhost/debt]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-09-02 13:49:17) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--5a4c020ea453796c9888835594eb10fdb7b5562a
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/javascripts/ajax_scaffold.js" with {:method=>:get}):
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/routing/recognition_optimisation.rb:67:in `recognize_path'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/routing/route_set.rb:384:in `recognize'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:148:in `handle_request'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:112:in `handle_dispatch'
+    /var/lib/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:78:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /var/lib/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:62:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-2.1.0/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /var/lib/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /var/lib/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /var/lib/gems/1.8/gems/rails-2.1.0/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing DebtController#index (for 127.0.0.1 at 2008-09-02 17:44:47) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--5a4c020ea453796c9888835594eb10fdb7b5562a
+  Parameters: {"action"=>"index", "controller"=>"debt"}
+  [4;35;1mDebt Load (0.006501)[0m   [0mSELECT * FROM "debts" ORDER BY money LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering debt/index
+  [4;36;1mCategory Load (0.000162)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;35;1mUser Load (0.000129)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 1) [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 0.17684 (5 reqs/sec) | Rendering: 0.13315 (75%) | DB: 0.00679 (3%) | 200 OK [http://localhost/debt]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-09-02 17:44:47) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--5a4c020ea453796c9888835594eb10fdb7b5562a
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/javascripts/ajax_scaffold.js" with {:method=>:get}):
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/routing/recognition_optimisation.rb:67:in `recognize_path'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/routing/route_set.rb:384:in `recognize'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:148:in `handle_request'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:112:in `handle_dispatch'
+    /var/lib/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:78:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /var/lib/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:62:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-2.1.0/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /var/lib/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /var/lib/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /var/lib/gems/1.8/gems/rails-2.1.0/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (not_found)
+  [4;36;1mDebt Load (0.000226)[0m   [0;1mSELECT * FROM "debts" WHERE ("debts"."id" = 1) [0m
+  [4;35;1mDebt Load (0.000575)[0m   [0mSELECT * FROM "debts" [0m
+  [4;36;1mDebt Load (0.000560)[0m   [0;1mSELECT * FROM "debts" [0m
+  [4;35;1mUser Load (0.000138)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mUser Load (0.000191)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mDebt Load (0.000927)[0m   [0;1mSELECT * FROM "debts" [0m
+  [4;35;1mDebt Load (0.000552)[0m   [0mSELECT * FROM "debts" [0m
+  [4;36;1mDebt Load (0.000555)[0m   [0;1mSELECT * FROM "debts" [0m
+  [4;35;1mDebt Load (0.000552)[0m   [0mSELECT * FROM "debts" [0m
+  [4;36;1mDebt Load (0.000553)[0m   [0;1mSELECT * FROM "debts" [0m
+  [4;35;1mUser Load (0.000445)[0m   [0mSELECT * FROM "users" [0m
+  [4;36;1mSQL (0.000803)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000266)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000205)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000277)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000404)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000065)[0m   [0mPRAGMA index_list("categories")[0m
+  [4;36;1mSQL (0.000063)[0m   [0;1mPRAGMA index_list("debts")[0m
+  [4;35;1mSQL (0.000062)[0m   [0mPRAGMA index_list("users")[0m
+  [4;36;1mSQL (0.000212)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000156)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.006295)[0m   [0;1mCREATE TABLE "categories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL NULL, "created_at" datetime DEFAULT NULL NULL, "updated_at" datetime DEFAULT NULL NULL) [0m
+  [4;35;1mSQL (0.000219)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.001841)[0m   [0;1mCREATE TABLE "debts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "description" varchar(255) DEFAULT NULL NULL, "money" float DEFAULT NULL NULL, "occurs_on" time DEFAULT NULL NULL, "category_id" integer DEFAULT NULL NULL, "user_id" integer DEFAULT NULL NULL, "created_at" datetime DEFAULT NULL NULL, "updated_at" datetime DEFAULT NULL NULL) [0m
+  [4;35;1mSQL (0.000235)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.001911)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL NULL, "income" float DEFAULT NULL NULL, "created_at" datetime DEFAULT NULL NULL, "updated_at" datetime DEFAULT NULL NULL) [0m
+  [4;35;1mSQL (0.000296)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.001733)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.001811)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.000376)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000089)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.001565)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20080813052712')[0m
+  [4;35;1mSQL (0.001525)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20080811052249')[0m
+  [4;36;1mSQL (0.001651)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20080807060929')[0m
+  [4;36;1mSQL (0.000725)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000349)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000341)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateCategories (20080813052712)
+  [4;35;1mSQL (0.000266)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.004961)[0m   [0;1mDROP TABLE "categories"[0m
+  [4;35;1mSQL (0.001850)[0m   [0mDELETE FROM schema_migrations WHERE version = '20080813052712'[0m
+Migrating to CreateUsers (20080811052249)
+  [4;36;1mSQL (0.000291)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.002058)[0m   [0mDROP TABLE "users"[0m
+  [4;36;1mSQL (0.002091)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20080811052249'[0m
+Migrating to CreateDebts (20080807060929)
+  [4;35;1mSQL (0.000189)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.002082)[0m   [0;1mDROP TABLE "debts"[0m
+  [4;35;1mSQL (0.001731)[0m   [0mDELETE FROM schema_migrations WHERE version = '20080807060929'[0m
+  [4;36;1mSQL (0.000187)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000095)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000178)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000548)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000123)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000083)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000081)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateDebts (20080807060929)
+  [4;36;1mSQL (0.000083)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000171)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.004626)[0m   [0;1mCREATE TABLE "debts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "description" varchar(255) DEFAULT NULL NULL, "money" float DEFAULT NULL NULL, "occurs_on" time DEFAULT NULL NULL, "category_id" integer DEFAULT NULL NULL, "user_id" integer DEFAULT NULL NULL, "created_at" datetime DEFAULT NULL NULL, "updated_at" datetime DEFAULT NULL NULL) [0m
+  [4;35;1mSQL (0.001559)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20080807060929')[0m
+Migrating to CreateUsers (20080811052249)
+  [4;36;1mSQL (0.002929)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.001800)[0m   [0mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL NULL, "income" float DEFAULT NULL NULL, "created_at" datetime DEFAULT NULL NULL, "updated_at" datetime DEFAULT NULL NULL) [0m
+  [4;36;1mSQL (0.001640)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080811052249')[0m
+Migrating to CreateCategories (20080813052712)
+  [4;35;1mSQL (0.000243)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.001944)[0m   [0;1mCREATE TABLE "categories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL NULL, "created_at" datetime DEFAULT NULL NULL, "updated_at" datetime DEFAULT NULL NULL) [0m
+  [4;35;1mSQL (0.001668)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20080813052712')[0m
+  [4;36;1mSQL (0.000295)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000369)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000064)[0m   [0;1mPRAGMA index_list("categories")[0m
+  [4;35;1mSQL (0.000062)[0m   [0mPRAGMA index_list("debts")[0m
+  [4;36;1mSQL (0.000124)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;36;1mSQL (0.000814)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000267)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000205)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000281)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000334)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000065)[0m   [0mPRAGMA index_list("categories")[0m
+  [4;36;1mSQL (0.000062)[0m   [0;1mPRAGMA index_list("debts")[0m
+  [4;35;1mSQL (0.000062)[0m   [0mPRAGMA index_list("users")[0m
+  [4;36;1mSQL (0.000203)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000158)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.005120)[0m   [0;1mCREATE TABLE "categories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL NULL, "created_at" datetime DEFAULT NULL NULL, "updated_at" datetime DEFAULT NULL NULL) [0m
+  [4;35;1mSQL (0.000209)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.001843)[0m   [0;1mCREATE TABLE "debts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "description" varchar(255) DEFAULT NULL NULL, "money" float DEFAULT NULL NULL, "occurs_on" time DEFAULT NULL NULL, "category_id" integer DEFAULT NULL NULL, "user_id" integer DEFAULT NULL NULL, "created_at" datetime DEFAULT NULL NULL, "updated_at" datetime DEFAULT NULL NULL) [0m
+  [4;35;1mSQL (0.000235)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.001856)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL NULL, "income" float DEFAULT NULL NULL, "created_at" datetime DEFAULT NULL NULL, "updated_at" datetime DEFAULT NULL NULL) [0m
+  [4;35;1mSQL (0.000289)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.002132)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.001838)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.000354)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000090)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.001739)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20080813052712')[0m
+  [4;35;1mSQL (0.001742)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20080811052249')[0m
+  [4;36;1mSQL (0.002022)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20080807060929')[0m
+  [4;36;1mSQL (0.000800)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000266)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000207)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000278)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000503)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000063)[0m   [0mPRAGMA index_list("categories")[0m
+  [4;36;1mSQL (0.000063)[0m   [0;1mPRAGMA index_list("debts")[0m
+  [4;35;1mSQL (0.000064)[0m   [0mPRAGMA index_list("users")[0m
+  [4;36;1mSQL (0.000203)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000158)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.003368)[0m   [0;1mCREATE TABLE "categories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL NULL, "created_at" datetime DEFAULT NULL NULL, "updated_at" datetime DEFAULT NULL NULL) [0m
+  [4;35;1mSQL (0.000202)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.001717)[0m   [0;1mCREATE TABLE "debts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "description" varchar(255) DEFAULT NULL NULL, "money" float DEFAULT NULL NULL, "occurs_on" time DEFAULT NULL NULL, "category_id" integer DEFAULT NULL NULL, "user_id" integer DEFAULT NULL NULL, "created_at" datetime DEFAULT NULL NULL, "updated_at" datetime DEFAULT NULL NULL) [0m
+  [4;35;1mSQL (0.000244)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.002080)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL NULL, "income" float DEFAULT NULL NULL, "created_at" datetime DEFAULT NULL NULL, "updated_at" datetime DEFAULT NULL NULL) [0m
+  [4;35;1mSQL (0.000289)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.002572)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.002538)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.000372)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000092)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.001956)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20080813052712')[0m
+  [4;35;1mSQL (0.002171)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20080811052249')[0m
+  [4;36;1mSQL (0.001958)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20080807060929')[0m
+
+
+Processing DebtController#index (for 127.0.0.1 at 2008-09-03 18:11:45) [GET]
+  Session ID: 330603299badd33aa73c67412ef733de
+  Parameters: {"action"=>"index", "controller"=>"debt"}
+  [4;36;1mDebt Load (0.001219)[0m   [0;1mSELECT * FROM "debts" ORDER BY money LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering debt/index
+  [4;35;1mCategory Load (0.000144)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 911953354) [0m
+  [4;36;1mUser Load (0.000132)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 237207540) [0m
+  [4;35;1mCategory Load (0.000102)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 911953352) [0m
+  [4;36;1mUser Load (0.000115)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1043446432) [0m
+Completed in 0.05021 (19 reqs/sec) | Rendering: 0.03973 (79%) | DB: 0.00171 (3%) | 200 OK [http://localhost/debt]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-09-03 18:11:46) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--5a4c020ea453796c9888835594eb10fdb7b5562a
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/javascripts/ajax_scaffold.js" with {:method=>:get}):
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/routing/recognition_optimisation.rb:67:in `recognize_path'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/routing/route_set.rb:384:in `recognize'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:148:in `handle_request'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:112:in `handle_dispatch'
+    /var/lib/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:78:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /var/lib/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:62:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-2.1.0/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /var/lib/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /var/lib/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /var/lib/gems/1.8/gems/rails-2.1.0/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing DebtController#index (for 127.0.0.1 at 2008-09-03 18:24:32) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--5a4c020ea453796c9888835594eb10fdb7b5562a
+  Parameters: {"action"=>"index", "controller"=>"debt"}
+  [4;36;1mDebt Load (0.005663)[0m   [0;1mSELECT * FROM "debts" ORDER BY money LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering debt/index
+  [4;35;1mCategory Load (0.000296)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 911953354) [0m
+  [4;36;1mUser Load (0.000266)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 237207540) [0m
+  [4;35;1mCategory Load (0.000230)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 911953352) [0m
+  [4;36;1mUser Load (0.000255)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1043446432) [0m
+Completed in 0.03528 (28 reqs/sec) | Rendering: 0.02177 (61%) | DB: 0.00671 (19%) | 200 OK [http://localhost/debt]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-09-03 18:24:32) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--5a4c020ea453796c9888835594eb10fdb7b5562a
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/javascripts/ajax_scaffold.js" with {:method=>:get}):
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/routing/recognition_optimisation.rb:67:in `recognize_path'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/routing/route_set.rb:384:in `recognize'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:148:in `handle_request'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:112:in `handle_dispatch'
+    /var/lib/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:78:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /var/lib/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:62:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-2.1.0/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /var/lib/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /var/lib/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /var/lib/gems/1.8/gems/rails-2.1.0/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (not_found)
+  [4;36;1mDebt Load (0.000929)[0m   [0;1mSELECT * FROM "debts" [0m
+  [4;35;1mUser Load (0.000303)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1043446432) [0m
+
+
+Processing DebtController#index (for 127.0.0.1 at 2008-09-03 18:27:11) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--5a4c020ea453796c9888835594eb10fdb7b5562a
+  Parameters: {"action"=>"index", "controller"=>"debt"}
+  [4;35;1mDebt Load (0.018183)[0m   [0mSELECT * FROM "debts" ORDER BY money LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering debt/index
+  [4;36;1mCategory Load (0.000263)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 911953354) [0m
+  [4;35;1mUser Load (0.000273)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 237207540) [0m
+  [4;36;1mCategory Load (0.000282)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 911953352) [0m
+  [4;35;1mUser Load (0.009379)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1043446432) [0m
+Completed in 0.11696 (8 reqs/sec) | Rendering: 0.08221 (70%) | DB: 0.02838 (24%) | 200 OK [http://localhost/debt]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-09-03 18:27:11) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--5a4c020ea453796c9888835594eb10fdb7b5562a
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/javascripts/ajax_scaffold.js" with {:method=>:get}):
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/routing/recognition_optimisation.rb:67:in `recognize_path'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/routing/route_set.rb:384:in `recognize'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:148:in `handle_request'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:112:in `handle_dispatch'
+    /var/lib/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:78:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /var/lib/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:62:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-2.1.0/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /var/lib/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /var/lib/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /var/lib/gems/1.8/gems/rails-2.1.0/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (not_found)

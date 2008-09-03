@@ -15,7 +15,7 @@
         %td
           = debt.occurs_on
         %td
-          = debt.category
+          = debt.category.name
         %td
-          = debt.user
+          = debt.user.name
   = will_paginate @debts
