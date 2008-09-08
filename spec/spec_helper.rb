@@ -49,11 +49,14 @@ Spec::Runner.configure do |config|
   # RSpec uses it's own mocking framework by default. If you prefer to
   # use mocha, flexmock or RR, uncomment the appropriate line:
   #
-  # config.mock_with :mocha
+  config.mock_with :mocha
   # config.mock_with :flexmock
   # config.mock_with :rr
   #
   # == Notes
   #
   # For more information take a look at Spec::Example::Configuration and Spec::Runner
+  @@test_user = { :id => 1, :name => "test01", :income => 0.5}
+  @@test_category = { :id => 1, :name => "test01"}
+  @@test_debt = { :description => "test01", :money => 100, :category_id => 1, :user_id => 1}
 end
