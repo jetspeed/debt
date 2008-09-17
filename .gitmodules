@@ -1,3 +1,12 @@
 [submodule "vendor/plugins/haml"]
 	path = vendor/plugins/haml
 	url = /home/wangxq/pro/ror/debt/vendor/plugins/haml/.git
+[submodule "vendor/plugins/rspec"]
+	path = vendor/plugins/rspec
+	url = /home/wangxq/pro/ror/debt/vendor/plugins/rspec/.git
+[submodule "vendor/plugins/rspec-rails"]
+	path = vendor/plugins/rspec-rails
+	url = /home/wangxq/pro/ror/debt/vendor/plugins/rspec-rails/.git
+[submodule "vendor/plugins/will_paginate"]
+	path = vendor/plugins/will_paginate
+	url = /home/wangxq/pro/ror/debt/vendor/plugins/will_paginate/.git

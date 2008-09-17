@@ -1,0 +1,7 @@
+log/*.log
+tmp/**/*
+doc/api
+doc/plugin
+doc/app
+vendor/rails
+config/database.yml
