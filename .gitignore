@@ -5,4 +5,3 @@ doc/plugin
 doc/app
 vendor/rails
 config/database.yml
-vendor/plugins/*/.git
