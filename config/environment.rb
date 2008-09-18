@@ -67,3 +67,6 @@ Rails::Initializer.run do |config|
 end
 #gem 'mislav-will_paginate', '~> 2.2'
 require 'will_paginate'
+class <<ActiveRecord::Base
+require 'list'
+end

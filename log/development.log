@@ -4768,3 +4768,456 @@ ActionController::RoutingError (No route matches "/javascripts/ajax_scaffold.js"
     script/server:3
 
 Rendering /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing DebtController#index (for 127.0.0.1 at 2008-09-17 16:10:42) [GET]
+  Session ID: cb35702c9d11b5a17a858023dcaf775a
+  Parameters: {"action"=>"index", "controller"=>"debt"}
+  [4;36;1mDebt Load (0.001253)[0m   [0;1mSELECT * FROM "debts" ORDER BY money LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering debt/index
+  [4;35;1mCategory Load (0.000284)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 911953354) [0m
+  [4;36;1mUser Load (0.000283)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 237207540) [0m
+  [4;35;1mCategory Load (0.000265)[0m   [0mSELECT * FROM "categories" WHERE ("categories"."id" = 911953352) [0m
+  [4;36;1mUser Load (0.000308)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1043446432) [0m
+Completed in 0.03014 (33 reqs/sec) | Rendering: 0.02108 (69%) | DB: 0.00239 (7%) | 200 OK [http://localhost/debt]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-09-17 16:10:42) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--5a4c020ea453796c9888835594eb10fdb7b5562a
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/javascripts/ajax_scaffold.js" with {:method=>:get}):
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/routing/recognition_optimisation.rb:67:in `recognize_path'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/routing/route_set.rb:384:in `recognize'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:148:in `handle_request'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:112:in `handle_dispatch'
+    /var/lib/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:78:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /var/lib/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:62:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-2.1.0/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /var/lib/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /var/lib/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /var/lib/gems/1.8/gems/rails-2.1.0/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing DebtController#new (for 127.0.0.1 at 2008-09-17 16:10:49) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--5a4c020ea453796c9888835594eb10fdb7b5562a
+  Parameters: {"action"=>"new", "controller"=>"debt"}
+Rendering template within layouts/application
+Rendering debt/new
+  [4;35;1mSQL (0.000462)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+ActionView::TemplateError (undefined method `list' for #<Class:0xb72565e0>) on line #2 of debt/new.haml:
+1: - form_for :debt, :url => debts_url do |form|
+2:   = form.select :category, Category.list, :label => 'Description'
+    /var/lib/gems/1.8/gems/activerecord-2.1.0/lib/active_record/base.rb:1667:in `method_missing_without_paginate'
+    vendor/plugins/will_paginate/lib/will_paginate/finder.rb:164:in `method_missing'
+    app/views/debt/new.haml:2:in `_run_plugin_47app47views47debt47new46haml'
+    vendor/plugins/haml/lib/haml/helpers/action_view_mods.rb:108:in `call'
+    vendor/plugins/haml/lib/haml/helpers/action_view_mods.rb:108:in `form_for'
+    vendor/plugins/haml/lib/haml/helpers.rb:373:in `call'
+    vendor/plugins/haml/lib/haml/helpers.rb:373:in `haml_bind_proc'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_view/helpers/form_helper.rb:317:in `fields_for'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_view/helpers/form_helper.rb:253:in `form_for_without_haml'
+    vendor/plugins/haml/lib/haml/helpers/action_view_mods.rb:112:in `form_for'
+    app/views/debt/new.haml:1:in `_run_plugin_47app47views47debt47new46haml'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:338:in `send'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:338:in `execute'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_view/template_handlers/compilable.rb:29:in `send'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_view/template_handlers/compilable.rb:29:in `render'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:35:in `render'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:22:in `render_template'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:245:in `render_file'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1108:in `render_for_file'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:841:in `render_with_no_layout'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/layout.rb:251:in `render_without_benchmark'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /var/lib/gems/1.8/gems/activesupport-2.1.0/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1157:in `default_render'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1163:in `perform_action_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:580:in `call_filters'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /var/lib/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /var/lib/gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `send'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `sass_old_process'
+    vendor/plugins/haml/lib/sass/plugin/rails.rb:19:in `process'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:112:in `handle_dispatch'
+    /var/lib/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:78:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /var/lib/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:62:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-2.1.0/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /var/lib/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /var/lib/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /var/lib/gems/1.8/gems/rails-2.1.0/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing DebtController#new (for 127.0.0.1 at 2008-09-17 16:12:53) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlM2YxM2U3ZmM0MGExMTk3YWExYThjOWU0MTVhYmMy
+ZmMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--28b285c6f046523db6b0b677f22cb388874c5345
+  Parameters: {"action"=>"new", "controller"=>"debt"}
+Rendering template within layouts/application
+Rendering debt/new
+
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.inject) on line #2 of debt/new.haml:
+1: - form_for :debt, :url => debts_url do |form|
+2:   = form.select :category, Category.list, :label => 'Description'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_view/helpers/form_options_helper.rb:195:in `options_for_select'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_view/helpers/form_options_helper.rb:390:in `to_select_tag'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_view/helpers/form_options_helper.rb:99:in `select'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_view/helpers/form_options_helper.rb:441:in `select'
+    app/views/debt/new.haml:2:in `_run_plugin_47app47views47debt47new46haml'
+    vendor/plugins/haml/lib/haml/helpers/action_view_mods.rb:108:in `call'
+    vendor/plugins/haml/lib/haml/helpers/action_view_mods.rb:108:in `form_for'
+    vendor/plugins/haml/lib/haml/helpers.rb:373:in `call'
+    vendor/plugins/haml/lib/haml/helpers.rb:373:in `haml_bind_proc'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_view/helpers/form_helper.rb:317:in `fields_for'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_view/helpers/form_helper.rb:253:in `form_for_without_haml'
+    vendor/plugins/haml/lib/haml/helpers/action_view_mods.rb:112:in `form_for'
+    app/views/debt/new.haml:1:in `_run_plugin_47app47views47debt47new46haml'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:338:in `send'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:338:in `execute'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_view/template_handlers/compilable.rb:29:in `send'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_view/template_handlers/compilable.rb:29:in `render'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:35:in `render'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:22:in `render_template'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:245:in `render_file'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1108:in `render_for_file'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:841:in `render_with_no_layout'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/layout.rb:251:in `render_without_benchmark'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /var/lib/gems/1.8/gems/activesupport-2.1.0/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1157:in `default_render'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1163:in `perform_action_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:580:in `call_filters'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /var/lib/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /var/lib/gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `send'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `sass_old_process'
+    vendor/plugins/haml/lib/sass/plugin/rails.rb:19:in `process'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:112:in `handle_dispatch'
+    /var/lib/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:78:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /var/lib/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:62:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-2.1.0/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /var/lib/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /var/lib/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /var/lib/gems/1.8/gems/rails-2.1.0/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing DebtController#new (for 127.0.0.1 at 2008-09-17 16:13:20) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlM2YxM2U3ZmM0MGExMTk3YWExYThjOWU0MTVhYmMy
+ZmMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--28b285c6f046523db6b0b677f22cb388874c5345
+  Parameters: {"action"=>"new", "controller"=>"debt"}
+Rendering template within layouts/application
+Rendering debt/new
+Completed in 0.01603 (62 reqs/sec) | Rendering: 0.00694 (43%) | DB: 0.00000 (0%) | 200 OK [http://localhost/debt/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-09-17 16:13:20) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlM2YxM2U3ZmM0MGExMTk3YWExYThjOWU0MTVhYmMy
+ZmMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--28b285c6f046523db6b0b677f22cb388874c5345
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/javascripts/ajax_scaffold.js" with {:method=>:get}):
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/routing/recognition_optimisation.rb:67:in `recognize_path'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/routing/route_set.rb:384:in `recognize'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:148:in `handle_request'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:112:in `handle_dispatch'
+    /var/lib/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:78:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /var/lib/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:62:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-2.1.0/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /var/lib/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /var/lib/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /var/lib/gems/1.8/gems/rails-2.1.0/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing DebtController#new (for 127.0.0.1 at 2008-09-17 16:36:25) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlM2YxM2U3ZmM0MGExMTk3YWExYThjOWU0MTVhYmMy
+ZmMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--28b285c6f046523db6b0b677f22cb388874c5345
+  Parameters: {"action"=>"new", "controller"=>"debt"}
+Rendering template within layouts/application
+Rendering debt/new
+  [4;36;1mSQL (0.000411)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000350)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+ActionView::TemplateError (undefined method `register_list' for #<Class:0xb706f088>) on line #2 of debt/new.haml:
+1: - form_for :debt, :url => debts_url do |form|
+2:   = form.select :category, Category.list, :label => 'Description'
+    /var/lib/gems/1.8/gems/activerecord-2.1.0/lib/active_record/base.rb:1667:in `method_missing_without_paginate'
+    vendor/plugins/will_paginate/lib/will_paginate/finder.rb:164:in `method_missing'
+    app/models/category.rb:3
+    /var/lib/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_without_new_constant_marking'
+    /var/lib/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_file'
+    /var/lib/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:214:in `load_file'
+    /var/lib/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:95:in `require_or_load'
+    /var/lib/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:260:in `load_missing_constant'
+    /var/lib/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:467:in `const_missing'
+    /var/lib/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:479:in `const_missing'
+    /var/lib/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:272:in `load_missing_constant'
+    /var/lib/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:467:in `const_missing'
+    /var/lib/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:485:in `send'
+    /var/lib/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:485:in `const_missing'
+    /var/lib/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:272:in `load_missing_constant'
+    /var/lib/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:467:in `const_missing'
+    app/views/debt/new.haml:2:in `_run_plugin_47app47views47debt47new46haml'
+    vendor/plugins/haml/lib/haml/helpers/action_view_mods.rb:108:in `call'
+    vendor/plugins/haml/lib/haml/helpers/action_view_mods.rb:108:in `form_for'
+    vendor/plugins/haml/lib/haml/helpers.rb:373:in `call'
+    vendor/plugins/haml/lib/haml/helpers.rb:373:in `haml_bind_proc'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_view/helpers/form_helper.rb:317:in `fields_for'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_view/helpers/form_helper.rb:253:in `form_for_without_haml'
+    vendor/plugins/haml/lib/haml/helpers/action_view_mods.rb:112:in `form_for'
+    app/views/debt/new.haml:1:in `_run_plugin_47app47views47debt47new46haml'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:338:in `send'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:338:in `execute'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_view/template_handlers/compilable.rb:29:in `send'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_view/template_handlers/compilable.rb:29:in `render'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:35:in `render'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:22:in `render_template'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:245:in `render_file'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1108:in `render_for_file'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:841:in `render_with_no_layout'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/layout.rb:251:in `render_without_benchmark'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /var/lib/gems/1.8/gems/activesupport-2.1.0/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1157:in `default_render'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1163:in `perform_action_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:580:in `call_filters'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /var/lib/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /var/lib/gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `send'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process_without_filters'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `sass_old_process'
+    vendor/plugins/haml/lib/sass/plugin/rails.rb:19:in `process'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:112:in `handle_dispatch'
+    /var/lib/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:78:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /var/lib/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:62:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-2.1.0/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /var/lib/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /var/lib/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /var/lib/gems/1.8/gems/rails-2.1.0/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing DebtController#new (for 127.0.0.1 at 2008-09-17 16:36:45) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlM2YxM2U3ZmM0MGExMTk3YWExYThjOWU0MTVhYmMy
+ZmMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--28b285c6f046523db6b0b677f22cb388874c5345
+  Parameters: {"action"=>"new", "controller"=>"debt"}
+Rendering template within layouts/application
+Rendering debt/new
+  [4;36;1mCategory Load (0.000404)[0m   [0;1mSELECT * FROM "categories" [0m
+Completed in 0.01969 (50 reqs/sec) | Rendering: 0.01101 (55%) | DB: 0.00040 (2%) | 200 OK [http://localhost/debt/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-09-17 16:36:45) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlM2YxM2U3ZmM0MGExMTk3YWExYThjOWU0MTVhYmMy
+ZmMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--28b285c6f046523db6b0b677f22cb388874c5345
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/javascripts/ajax_scaffold.js" with {:method=>:get}):
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/routing/recognition_optimisation.rb:67:in `recognize_path'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/routing/route_set.rb:384:in `recognize'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:148:in `handle_request'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:112:in `handle_dispatch'
+    /var/lib/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:78:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /var/lib/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:62:in `dispatch'
+    /var/lib/gems/1.8/gems/rails-2.1.0/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /var/lib/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /var/lib/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /var/lib/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /var/lib/gems/1.8/gems/rails-2.1.0/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /var/lib/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (not_found)
