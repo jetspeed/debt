@@ -1846,3 +1846,38 @@ Processing DebtController#index (for 0.0.0.0 at 2008-09-17 16:35:36) [GET]
 Rendering template within layouts/application
 Rendering debt/index
 Completed in 0.00142 (704 reqs/sec) | Rendering: 0.00023 (16%) | DB: 0.00060 (42%) | 200 OK [http://test.host/debt]
+  [4;36;1mCategory Load (0.000806)[0m   [0;1mSELECT * FROM "categories" [0m
+  [4;35;1mCategory Create (0.000159)[0m   [0mINSERT INTO "categories" ("name", "updated_at", "created_at") VALUES(NULL, '2008-09-18 05:55:19', '2008-09-18 05:55:19')[0m
+  [4;36;1mUser Create (0.000174)[0m   [0;1mINSERT INTO "users" ("name", "updated_at", "income", "created_at") VALUES(NULL, '2008-09-18 05:55:19', NULL, '2008-09-18 05:55:19')[0m
+  [4;35;1mSQL (0.000214)[0m   [0mSELECT count(*) AS count_all FROM "debts" [0m
+  [4;36;1mDebt Load (0.000299)[0m   [0;1mSELECT * FROM "debts" WHERE ("debts"."id" = 41322288) [0m
+  [4;35;1mDebt Create (0.000170)[0m   [0mINSERT INTO "debts" ("money", "updated_at", "occurs_on", "description", "category_id", "user_id", "created_at") VALUES(12.67, '2008-09-18 05:55:19', NULL, 'buy meat', NULL, NULL, '2008-09-18 05:55:19')[0m
+  [4;36;1mSQL (0.000155)[0m   [0;1mSELECT count(*) AS count_all FROM "debts" [0m
+  [4;35;1mDebt Load (0.000310)[0m   [0mSELECT * FROM "debts" WHERE ("debts"."id" = 41322288) [0m
+  [4;36;1mUser Load (0.000244)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 237207540) [0m
+  [4;35;1mDebt Create (0.000167)[0m   [0mINSERT INTO "debts" ("money", "updated_at", "occurs_on", "description", "category_id", "user_id", "created_at") VALUES(NULL, '2008-09-18 05:55:19', NULL, NULL, NULL, NULL, '2008-09-18 05:55:19')[0m
+
+
+Processing DebtController#create (for 0.0.0.0 at 2008-09-18 13:55:19) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"debt", "debt"=>{"money"=>100, "category_id"=>1, "description"=>"test01", "user_id"=>1}}
+  [4;36;1mDebt Create (0.000218)[0m   [0;1mINSERT INTO "debts" ("money", "updated_at", "occurs_on", "description", "category_id", "user_id", "created_at") VALUES(100.0, '2008-09-18 05:55:19', NULL, 'test01', 1, 1, '2008-09-18 05:55:19')[0m
+Redirected to http://test.host/debts/new?debt=41322290
+Completed in 0.00449 (222 reqs/sec) | DB: 0.00407 (90%) | 302 Found [http://test.host/debt/create?debt%5Bcategory_id%5D=1&debt%5Bdescription%5D=test01&debt%5Bmoney%5D=100&debt%5Buser_id%5D=1]
+
+
+Processing DebtController#new (for 0.0.0.0 at 2008-09-18 13:55:19) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"debt"}
+Rendering template within layouts/application
+Rendering debt/new
+Completed in 0.00070 (1422 reqs/sec) | Rendering: 0.00035 (50%) | DB: 0.00000 (0%) | 200 OK [http://test.host/debt/new]
+
+
+Processing DebtController#index (for 0.0.0.0 at 2008-09-18 13:55:19) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"debt"}
+  [4;35;1mDebt Load (0.000637)[0m   [0mSELECT * FROM "debts" ORDER BY money LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering debt/index
+Completed in 0.00151 (663 reqs/sec) | Rendering: 0.00024 (16%) | DB: 0.00064 (42%) | 200 OK [http://test.host/debt]
